@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+  Name: Jake Persons
+  Date Created: 10/20/2019
+  Most recent revision:
+-->
+<html lang="en">
+<head>
+  <title>Contact</title>
+</head>
+<body>
+  <header>
+    <h1>Contact</h1>
+  </header>
+  <nav>
+    <hr />
+    <a href="index.html">
+      <img src="images/me.jpg" alt="Jake Persons" width="30%"/>
+    </a>
+    <hr />
+  </nav>
+  <article>
+    <h2>Information Request</h2>
+    <form action="submit.html" method="post">
+      <label for="firstName">First Name:</label><br />
+      <input type="text" id="firstName" name="firstName"><br />
+      <label for="lastName">Last Name:</label><br />
+      <input type="text" id="lastName" name="lastName"><br />
+      <label for="phone">Phone:</label><br />
+      <input type="text" id="phone" name="phone"><br />
+      <label for="contact">Best time to call:</label><br />
+      <select id="contact" name="contact">
+        <option value="default" selected>--Select One--</option>
+        <option value="morning">Morning (8AM to 12PM Central)</option>
+        <option value="afternoon">Afternoon (12PM to 5PM Central)</option>
+        <option value="evening">Evening (5PM to 8PM Central)</option>
+      </select>
+      <fieldset>
+        <legend>I am interested in (check all that apply)</legend><br />
+        <input type="checkbox" id="python" name="interest" value="python">
+        <label for="python">Python</label><br />
+        <input type="checkbox" id="DS" name="interest" value="dataScience">
+        <label for="DS">Data Science</label><br />
+        <input type="checkbox" id="binf" name="interest" value="binf">
+        <label for="binf">Bioinformatics</label><br />
+      </fieldset>
+      <fieldset>
+        <legend>I have filled in the client questionnaire form:</legend><br />
+        <input type="radio" id="choice1" name="questionnaire" value="yes">
+        <label for="choice1">Yes</label><br />
+        <input type="radio" id="choice2" name="questionnaire" value="no">
+        <label for="choice2">No</label><br />
+      </fieldset>
+      <label for="info">Additional Information</label><br />
+      <textarea id="info" name="info"></textarea><br />
+      <input type="submit" name="submit" value="Submit">
+    </form>
+  </article>
+  <footer>
+  </footer>
+
+</body>
+</html>
