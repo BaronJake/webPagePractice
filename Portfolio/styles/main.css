@@ -1,0 +1,62 @@
+/*
+Created By: Jake Persons
+Date created: 10/27/2019
+Sate last modified:
+*/
+body{
+  color:#6F686D;
+  background-color: #D8D0C1;
+  font-family: arial, helvetica, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+}
+header, footer{
+  background-color: #CBB8A9;
+  height: 100px;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+}
+h1{
+  font-size: 2.5em;
+}
+nav{
+  border-top: 3px dashed #6F686D;
+  border-bottom: 3px dashed #6F686D;
+  margin-top: 4px;
+}
+nav a {
+    font-size: 1.2em;
+    background-color: #E0D3DE;
+    color: #6F686D;
+    padding: 8px;
+    border: thick solid #6F686D;
+    text-decoration:none;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    width: 100px;
+    float:left;
+}
+nav a:visited {
+    background-color: #CBB8A9;
+    color: #6F686D;
+}
+nav a:hover {
+    background-color: #6F686D;
+    color: #E0D3DE;
+}
+nav a:active{
+  font-weight:bold;
+}
+.clear-float{
+  clear:both;
+}
+article img{
+  float:left;
+}
+.right-content{
+  float:left;
+}
+article{
+  margin-bottom:16px;
+}

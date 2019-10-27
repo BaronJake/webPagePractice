@@ -2,108 +2,171 @@
 <!--
   Name: Jake Persons
   Date Created: 10/16/2019
-  Most recent revision: 10/20/2019
+  Most recent revision: 10/26/2019
   Purpose: HTML practice
 -->
 <html lang="en">
   <head>
     <title>Jake's Portfolio</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <style>
+      caption{
+        font-weight:bold;
+        font-size:1.2em;
+        margin-bottom: 8px;
+      }
+      table, th, td{
+        border: 1px solid #6F686D;
+        border-collapse: collapse;
+        padding: 5px 10px;
+      }
+      table{
+        width: 90%;
+        margin: auto;
+      }
+      tr{
+        height: 30px;
+      }
+      th{
+        background-color: #B3B492;
+      }
+      tr:nth-child(even){
+        background-color: #E0D3DE;
+      }
+    </style>
   </head>
   <body>
     <main>
       <header>
         <h1>Portfolio for Jake Persons</h1>
       </header>
-      <nav>
-        <hr />
+      <nav class="border">
+        <p><a href="index.html">Home</a></p>
         <p><a href="projects.html">Projects</a></p>
         <p><a href="contact.html">Contact</a></p>
         <p><a href="testimonials.html">Testimonials</a></p>
-        <p><a href="#hobbies">Hobbies</a></p>
-        <hr />
+        <div class="clear-float"></div>
       </nav>
       <section>
-        <article id="about">
+        <article id="about" class="border">
           <h2><em>About Me</em></h2>
-          <img src="images/me.jpg" alt="Jake Persons" width="25%"
-          />
-          <p> </p>
-          <p> </p>
+          <img src="images/me.jpg" alt="Jake Persons" width="25%"/>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Velit laoreet id donec ultrices tincidunt arcu non. Neque volutpat
+            ac tincidunt vitae semper quis lectus. Id cursus metus aliquam
+            eleifend mi in. Dignissim suspendisse in est ante in nibh mauris
+            cursus mattis. Nisl nunc mi ipsum faucibus vitae aliquet nec
+            ullamcorper. Facilisis magna etiam tempor orci eu lobortis
+            elementum. Pharetra sit amet aliquam id. Et egestas quis ipsum
+            suspendisse ultrices gravida dictum. Volutpat sed cras ornare
+            arcu dui vivamus arcu. Eu feugiat pretium nibh ipsum consequat
+            nisl. Gravida quis blandit turpis cursus in hac habitasse.
+            Et netus et malesuada fames ac turpis egestas integer eget.
+            Placerat vestibulum lectus mauris ultrices eros. Scelerisque
+            eu ultrices vitae auctor eu. Urna cursus eget nunc scelerisque
+            viverra. Sit amet purus gravida quis blandit turpis cursus in.
+            Consectetur libero id faucibus nisl tincidunt eget. Adipiscing
+            enim eu turpis egestas pretium aenean pharetra magna.
+          </p>
+          <p>Dapibus ultrices in iaculis nunc sed augue lacus viverra. Et
+            odio pellentesque diam volutpat commodo sed egestas egestas.
+            Nunc aliquet bibendum enim facilisis gravida neque convallis. Ut
+            etiam sit amet nisl purus in mollis. Diam volutpat commodo sed
+            egestas egestas fringilla phasellus faucibus. Leo urna molestie
+            at elementum eu facilisis sed odio. Adipiscing diam donec
+            adipiscing tristique risus nec. Turpis egestas integer eget
+            aliquet nibh praesent. Viverra nam libero justo laoreet. Sed sed
+            risus pretium quam vulputate dignissim suspendisse. Dui accumsan
+            sit amet nulla facilisi. In arcu cursus euismod quis viverra nibh
+            cras. Purus viverra accumsan in nisl nisi scelerisque eu.
+          </p>
+        <div class="clear-float"></div>
         </article>
         <article id="past">
           <h2><em>Past Experiences</em></h2>
           <img src="images/labcoat.jpg" alt="Jake in a labcoat" width="25%"/>
-          <table>
-            <caption> Employment History</caption>
-            <tr>
-              <th>Dates Employment</th>
-              <th>Title</th>
-              <th>Company</th>
-            </tr>
-            <tr>
-              <td>May 2019 - Present</td>
-              <td>Systems Analyst</td>
-              <td>Abbott</td>
-            </tr>
-            <tr>
-              <td>Jan. 2018 - Dec. 2018</td>
-              <td>Operations Analyst</td>
-              <td>Baxter</td>
-            </tr>
-            <tr>
-              <td>Jan. 2017 - July 2017</td>
-              <td>Business Project Analyst</td>
-              <td>Abbott</td>
-            </tr>
-            <tr>
-              <td>2014 - 2016</td>
-              <td>Chemistry Lab Technician</td>
-              <td>Multiple Companies</td>
-            </tr>
-          </table>
+          <div class="right-content">
+            <table>
+              <caption> Employment History</caption>
+              <thead>
+                <tr>
+                  <th>Dates Employment</th>
+                  <th>Title</th>
+                  <th>Company</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>May 2019 - Present</td>
+                  <td>Systems Analyst</td>
+                  <td>Abbott</td>
+                </tr>
+                <tr>
+                  <td>Jan. 2018 - Dec. 2018</td>
+                  <td>Operations Analyst</td>
+                  <td>Baxter</td>
+                </tr>
+                <tr>
+                  <td>Jan. 2017 - July 2017</td>
+                  <td>Business Project Analyst</td>
+                  <td>Wave Broadband</td>
+                </tr>
+                <tr>
+                  <td>2014 - 2016</td>
+                  <td>Chemistry Lab Technician</td>
+                  <td>Multiple Companies</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="clear-float"></div>
         </article>
         <article id="hobbies">
           <h2><em>Hobbies</em></h2>
           <img src="images/press.jpg" alt="Using A Fruit Press To Make
           Applewine" width="25%"/>
-          <ul>
-            <li>Podcasts</li>
-            <ol>
-              <li>The No Sleep Podcast</li>
-              <li>No Such Thing as a Fish</li>
-              <li>All Songs Considered</li>
-              <li>Philosophize This</li>
-              <li>The Way I Heard It with Mike Rowe</li>
-            </ol>
-            <li>Authors</li>
-            <ol>
-              <li>H.P. Lovecraft</li>
-              <li>Friedrich Nietzsche</li>
-              <li>Fyodor Dostoevsky</li>
-              <li>David Wong</li>
-              <li>Franz Kafka</li>
-            </ol>
-          </ul>
-          <ul>
-            <li>Sports</li>
+          <div class="right-content">
             <ul>
-              <li>Bowling</li>
-              <li>Archery</li>
+              <li>Podcasts</li>
+              <ol>
+                <li>The No Sleep Podcast</li>
+                <li>No Such Thing as a Fish</li>
+                <li>All Songs Considered</li>
+                <li>Philosophize This</li>
+                <li>The Way I Heard It with Mike Rowe</li>
+              </ol>
+              <li>Authors</li>
+              <ol>
+                <li>H.P. Lovecraft</li>
+                <li>Friedrich Nietzsche</li>
+                <li>Fyodor Dostoevsky</li>
+                <li>David Wong</li>
+                <li>Franz Kafka</li>
+              </ol>
             </ul>
-            <li>Outdoor Activities</li>
             <ul>
-              <li>Landscaping</li>
-              <li>Geocaching</li>
-              <li>Fishing</li>
-              <li>Hunting</li>
-              <li>Walking</li>
-              <li>Kayaking</li>
+              <li>Sports</li>
+              <ul>
+                <li>Bowling</li>
+                <li>Archery</li>
+              </ul>
+              <li>Outdoor Activities</li>
+              <ul>
+                <li>Landscaping</li>
+                <li>Geocaching</li>
+                <li>Fishing</li>
+                <li>Hunting</li>
+                <li>Walking</li>
+                <li>Kayaking</li>
+              </ul>
             </ul>
-          </ul>
+          </div>
+          <div class="clear-float"></div>
         </article>
       </section>
       <footer>
-        <hr />
         <p>&copy; 2019 Jake Persons. All rights reserved</p>
       </footer>
     </main>
