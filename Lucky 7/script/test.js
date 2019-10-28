@@ -17,7 +17,7 @@ function luckySevens(){
     return false;
   }
   while (bet > 0) {
-    dice = rollDice(12);
+    dice = rollDice(6) + rollDice(6);
     count = count += 1;
     if (dice == 7){
       bet = bet + 4;
